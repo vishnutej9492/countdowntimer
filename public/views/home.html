@@ -1,0 +1,21 @@
+<div class="jumbotron text-center">
+	<div class="time-t">
+		<span ng-bind="days"></span>
+		<span>:</span>
+		<span ng-bind="hours"></span>
+		<span>:</span>
+		<span ng-bind="minutes"></span>
+		<span>:</span>
+		<span ng-bind="seconds" ng-style="{ 'color': seconds <= '05' ? 'red' : 'black' }"></span>
+	</div>
+	<div class="time-d">
+		<span style="padding: 15px">Days</span>
+		<span style="padding: 15px">Hours</span>
+		<span style="padding: 15px; padding-left:20px">Minutes</span>
+		<span style="padding: 15px">Seconds</span>
+	</div>
+	<br>
+	<div ng-hide = "IsHidden">
+		<button ng-click="countdown();ShowHide()" class="btn">Start</button>     
+	</div>
+</div>
